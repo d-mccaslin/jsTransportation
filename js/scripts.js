@@ -48,9 +48,9 @@ function stressTest(stress, health, manage) {
     } else { 
       result = "you should look into some options to reduce your stress.";
     }
-  } else if (stress.length > 1 && health.length > 1) {
+  } else if (stress.length > 1 || health.length > 1) {
     if (manage.length > 2) {
-      result = "You are doing a good job at managing your stress level.";
+      result = "You are doing a good job at managing yourself.";
     } else {
       result = "You should should be fine.";
     } 
@@ -80,7 +80,7 @@ $(document).ready(function(){
     const testResult = stressTest(negStresser, negHealth, manage);
 
     $("#result").text(testResult);
-    
+
     $('#stress-test').hide();
 
     $("#results").show();
