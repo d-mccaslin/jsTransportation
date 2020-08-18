@@ -12,5 +12,7 @@ $(document).ready(function(){
       $('#fun-responses').append(funTransportationMode + "<br>");
     });
     $('#transportation_survey').hide();
+
+    $("#results").show();
   });
 });
